@@ -36,7 +36,6 @@ android {
 }
 
 dependencies {
-    implementation(project(":lib-sdklogify"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -45,4 +44,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("com.github.Gao-hao-nan:SDK-Logify:0.1.0")
 }

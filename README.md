@@ -31,7 +31,7 @@ dependencyResolutionManagement {
     }
 }
 dependencies {
-    implementation("com.github.Gao-hao-nan.SDK-Logify:lib-sdklogify:0.1.0")
+    implementation("com.github.Gao-hao-nan:SDK-Logify:0.1.0")
 }
 
 ```
