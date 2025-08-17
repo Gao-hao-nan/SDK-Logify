@@ -1,6 +1,10 @@
-# SDK Logify 📊
+# 1. SDK Logify 📊
 
 一个轻量级、可插拔、适用于 SDK 开发的日志收集工具。
+
+<!-- Preview Images -->
+![Demo Preview](./image/preview.gif)
+![UI Screenshot](./image/screenshot.png)
 
 ---
 
@@ -12,10 +16,29 @@
 * ✅ 支持接口方法代理，类的方法调用全进日志
 * ✅ 全量级日志写入到 SDK 包名相关目录
 
----
-## 🚀 快速上手
+## 1.0️ 安装（JitPack）
 
-### 1. 初始化 Logger
+### 1.0.1 项目级仓库（`settings.gradle.kts` / `settings.gradle`）
+
+**Kotlin DSL（settings.gradle.kts）**
+```kotlin
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven(url = "https://jitpack.io")
+    }
+}
+dependencies {
+    implementation("com.github.Gao-hao-nan.SDK-Logify:lib-sdklogify:0.1.0")
+}
+
+```
+---
+## 1.1. 🚀 快速上手
+
+### 1.1.1. 初始化 Logger
 
 ```kotlin
 Logger.init(
@@ -25,7 +48,7 @@ Logger.init(
 )
 ```
 
-### 2. 手动日志打印
+### 1.1.2. 手动日志打印
 
 ```kotlin
 Logger.autoReport(
@@ -64,9 +87,9 @@ wrapped.onError(401, "token 失效")
 
 ---
 
-## 🎩 接口方法全量跟踪
+## 1.2. 🎩 接口方法全量跟踪
 
-### 方案：LogProxy.wrap
+### 1.2.1. 方案：LogProxy.wrap
 
 ```kotlin
 interface PaymentService {
@@ -98,7 +121,7 @@ service.pay(100)
 
 ---
 
-## ✨ 推荐配置
+## 1.3. ✨ 推荐配置
 
 * 将 `code`/“msg” 数据实现为 enum
 * 在 SDK init 时候传入 `Logger.init()`

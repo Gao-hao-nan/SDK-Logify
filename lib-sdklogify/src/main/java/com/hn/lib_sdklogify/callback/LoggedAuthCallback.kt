@@ -11,7 +11,7 @@ import com.hn.lib_sdklogify.enum.LogLevel
  *    / _ \ | '_ \ / _` | '__/ _ \| |/ _` | \___ \| __| | | |/ _` | |/ _ \
  *   / ___ \| | | | (_| | | | (_) | | (_| |  ___) | |_| |_| | (_| | | (_) |
  *  /_/   \_\_| |_|\__,_|_|  \___/|_|\__,_| |____/ \__|\__,_|\__,_|_|\___/
- *  描述: TODO
+ *  描述:
  */
 class LoggedCallback<T>(
     private val origin: SdkCallback<T>,
