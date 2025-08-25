@@ -44,5 +44,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("com.github.Gao-hao-nan:SDK-Logify:0.1.0")
+    implementation("com.github.kairowan:SDK-Logify:0.1.0")
 }
